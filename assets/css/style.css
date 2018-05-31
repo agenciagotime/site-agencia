@@ -161,6 +161,11 @@ section {
   height: 100%;
 }
 
+.logotipo:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
 /**************************************
  *          MENU HAMBURGER
  **************************************/
