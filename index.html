@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Desenvolvimento de Aplicações Web">
+  <meta name="author" content="Kelvin Santiago, Rodrigo Lima">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+  <!-- Font and Style -->
+  <style>
+  .loader { position: absolute; content: ''; opacity: 1; visibility: visible; top: 0; right: 0; left: 0; bottom: 0;
+   background: url(/assets/img/loader.svg) center no-repeat #FFF; background-size: 50px; transition: opacity .8s, visibility 1s;
+  z-index: 50;}
+  </style>
+  <link rel="stylesheet" href="assets/css/_base.css" media="none" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" href="assets/css/style.css" media="none" onload="if(media!='all')media='all'">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600" rel="stylesheet">
+  <title>GoTime — Agência Digital</title>
+</head>
+
+<body id="page-top">
+  <div class="loader" id="loader"></div>
+  <img class="shape" src="assets/img/shape-bg.svg" alt="">
+  <nav class="navbar">
+    <div class="nav-wrapper">
+      <a href="#page-top">
+        <svg class="logotipo" xmlns="http://www.w3.org/2000/svg" id="Camada_1" viewBox="0 0 273 301.6"><style>.st0{fill:#599def}.st1{fill:#377de1}.st2{fill:#355293}</style><g id="XMLID_1_"><path id="XMLID_11_" class="st0" d="M136.5.7L0 79.5 37.2 101l99.3-57.3 37.2 21.5 37.2-21.5-74.4-43z"/><path id="XMLID_10_" class="st1" d="M0 222.8V79.5L37.2 101v100.3l99.3 57.3v43L0 222.8z"/><path id="XMLID_9_" class="st0" d="M235.8 58L99.3 136.8l37.2 21.5L273 79.5 235.8 58z"/><path id="XMLID_8_" class="st1" d="M99.3 179.8v-43l37.2 21.5v43l-37.2-21.5z"/><path id="XMLID_7_" class="st2" d="M136.5 301.6L273 222.8V79.5l-136.5 78.8v43l99.3-57.3v57.3l-99.3 57.3v43z"/><path id="XMLID_6_" class="st2" d="M136.5 43.7v43l-62.1 35.8v57.3l-37.2 21.5V101l99.3-57.3z"/><path id="XMLID_5_" class="st2" d="M210.9 43.7v28.7l-37.2 21.5V65.2l37.2-21.5z"/><path id="XMLID_4_" class="st1" d="M136.5 43.7v43l24.8 14.3 12.4-7.2V65.2l-37.2-21.5z"/><path id="XMLID_3_" class="st1" d="M198.6 165.5v14.3l37.2 21.5V144l-37.2 21.5z"/><path id="XMLID_2_" class="st0" d="M136.5 215.6l-62.1-35.8-37.2 21.5 99.3 57.3 99.3-57.3-37.2-21.5-62.1 35.8z"/></g></svg>
+      </a>
+      <div class="nav-stack">
+        <div class="nav-item">
+          <a href="#about">Agência</a>
+        </div>
+        <div class="nav-item">
+          <a href="#services">Serviços</a>
+        </div>
+        <div class="nav-item">
+          <a href="#portfolio">Portfólio</a>
+        </div>
+        <div class="nav-item">
+          <a href="#footer">Contato</a>
+        </div>
+      </div>
+      <div id="btn-menu">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="menu-mobile" id="menu">
+      <div class="navigation">
+        <ul>
+          <li class="menu-item">
+            <a href="#about">Agência</a>
+          </li>
+          <li class="menu-item">
+            <a href="#services">Serviços</a>
+          </li>
+          <li class="menu-item">
+            <a href="#portfolio">Portfólio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#footer">Contato</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-social">
+        <a class="facebook" href="https://www.facebook.com/agenciagotime" target="_blank" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon" viewBox="0 0 48 46">
+            <path fill="#FFF" d="M16.5,0 L7.4,0 C3.8,0 0.9,2.9 0.9,6.5 L0.9,15.6 C0.9,19.2 3.8,22.1 7.4,22.1 L16.5,22.1 C20.1,22.1 23,19.2 23,15.6 L23,6.5 C23,2.9 20.1,0 16.5,0 Z M21,15.5 C21,18 19,20 16.5,20 L14,20 L14,12 L17,12 L17,10 L14,10 L14,9 C14,7.9 14.9,7 16,7 L18,7 L18,5 L16,5 C13.8,5.1 12,6.8 12,9 L12,10 L10,10 L10,12 L12,12 L12,20 L7.5,20 C5,20 3,18 3,15.5 L3,6.4 C3,3.9 5,1.9 7.5,1.9 L16.6,1.9 C19.1,1.9 21.1,3.9 21.1,6.4 L21.1,15.5 L21,15.5 Z"></path>
+          </svg>
+        </a>
+        <a class="instagram" href="https://www.instagram.com/agenciagotime/" target="_blank" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon" viewBox="0 0 44 44">
+            <path fill="#FFF" d="M2,6.45187444 C2,3.98999605 3.98785555,2 6.45187444,2 L15.5481256,2 C18.010004,2 20,3.98785555 20,6.45187444 L20,15.5481256 C20,18.010004 18.0121444,20 15.5481256,20 L6.45187444,20 C3.98999605,20 2,18.0121444 2,15.5481256 L2,6.45187444 Z M0,6.45187444 L0,15.5481256 C0,19.1171961 2.8859081,22 6.45187444,22 L15.5481256,22 C19.1171961,22 22,19.1140919 22,15.5481256 L22,6.45187444 C22,2.88280393 19.1140919,0 15.5481256,0 L6.45187444,0 C2.88280393,0 0,2.8859081 0,6.45187444 Z"
+              fill-rule="evenodd"></path>
+            <path fill="#FFF" d="M11,6.7 C13.3748244,6.7 15.3,8.62517558 15.3,11 C15.3,13.3748244 13.3748244,15.3 11,15.3 C8.62517558,15.3 6.7,13.3748244 6.7,11 C6.7,8.62517558 8.62517558,6.7 11,6.7 L11,6.7 Z M11,5 C7.6862915,5 5,7.6862915 5,11 C5,14.3137085 7.6862915,17 11,17 C14.3137085,17 17,14.3137085 17,11 C17,7.6862915 14.3137085,5 11,5 Z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </a>
+        <a class="github" href="https://github.com/agenciagotime" target="_blank" aria-label="Github">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon" viewBox="0 0 44 46">
+            <path fill="#FFF" d="M3.7,3.13 L5.31,4.13 L6,4.62 L6.77,4.37 C9.52406037,3.48550991 12.4859396,3.48550991 15.24,4.37 L16.01,4.62 L16.69,4.18 L18.3,3.18 L18.3,5.92 L18.82,6.42 C19.7062938,7.2067388 20.2395262,8.31643859 20.3,9.5 C20.3,11.59 18.3,13.6 15.3,14.61 C14.5498118,14.8610534 13.9610534,15.4498118 13.71,16.2 C13.4605039,16.918827 13.5681931,17.7134992 14,18.34 C14.1758517,18.5885364 14.270195,18.8855429 14.27,19.19 L14.27,20.26 L7.7,20.26 L7.7,19.19 C7.70852076,18.8822417 7.81345557,18.5849264 8,18.34 C8.43856756,17.7168713 8.55371762,16.9219644 8.31,16.2 C8.06101579,15.4520453 7.476369,14.8636982 6.73,14.61 C3.73,13.61 1.73,11.61 1.73,9.5 C1.78272511,8.32091623 2.30482985,7.21189374 3.18,6.42 L3.7,5.92 L3.7,3.13 L3.7,3.13 Z M19.41,0.5 C19.295815,0.501105776 19.184497,0.535892672 19.09,0.6 L15.77,2.75 C12.6685484,1.75043243 9.33145162,1.75043243 6.23,2.75 L2.91,0.59 C2.81439909,0.529420923 2.70316309,0.498135799 2.59,0.5 C2.264152,0.5 2,0.764151998 2,1.09 L2,5.2 C0.771136618,6.29787584 0.0478983557,7.8528381 0,9.5 C0,12.5 2.51,15 6.15,16.22 C6.37618683,16.2921516 6.55644235,16.4646104 6.63851832,16.687388 C6.72059429,16.9101656 6.69531211,17.1583488 6.57,17.36 C6.19512112,17.8962763 5.99595672,18.5356988 6,19.19 L6,22 L16,22 L16,19.19 C16.0019759,18.5391076 15.802907,17.9034841 15.43,17.37 C15.3046879,17.1683488 15.2794057,16.9201656 15.3614817,16.697388 C15.4435576,16.4746104 15.6238132,16.3021516 15.85,16.23 C19.49,15 22,12.45 22,9.5 C21.9521016,7.8528381 21.2288634,6.29787584 20,5.2 L20,1.09 C20,0.933522271 19.9378395,0.783453462 19.827193,0.672806999 C19.7165465,0.562160536 19.5664777,0.5 19.41,0.5 L19.41,0.5 Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div id="modal" class="modal">
+    <div class="modal-header">
+      <h2>Contato</h2>
+      <span id="btn-close" class="close-modal">&times;</span>
+    </div>
+    <div class="modal-box">
+      <form action="https://formspree.io/rclfisica@gmail.com" method="POST">
+        <div class="input-container">
+          <select name="Tipo" id="dropdown-select">
+            <option disabled selected>Tipo de projeto...</option>
+            <option value="website">Website</option>
+            <option value="branding">Branding</option>
+            <option value="design">Web Design</option>
+            <option value="desenvolvimento">Desenvolvimento</option>
+          </select>
+        </div>
+        <input type="hidden" name="_next" value="thanks.html"/>
+        <input type="hidden" name="_language" value="pt-BR" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <div class="input-container">
+          <input type="text" id="name" name="Nome" pattern=".*\S.*" required>
+          <label for="name" class="floating-label">Nome</label>
+        </div>
+        <div class="input-container">
+          <input type="email" id="email" name="Email" onblur="checkMail(this)" required>
+          <label for="email" class="floating-label">Email</label>
+          <span class="form-error" id="error">informe um email válido</span>
+        </div>
+        <div class="input-container">
+          <textarea name="Mensagem" id="message" placeholder="Fale sobre seu projeto (opcional)"></textarea>
+        </div>
+        <div class="input-container">
+          <input class="btn-outline" type="submit" value="SOLICITAR ORÇAMENTO">
+        </div>        
+      </form>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <h1>Somos a <span>Gotime,</span><br>a agência digital</h1>
+        <p>Nunca foi tão fácil ter o seu site profissional</p>
+        <a href="#" onclick="openModal()" class="btn-outline">SOLICITE UM ORÇAMENTO</a>
+      </div>      
+    </div>
+  </header>
+  <section id="about">
+    <div class="container w660">
+      <img class="spinner" src="assets/img/spinner.svg" alt="">
+      <h2>A Agência</h2>
+      <p>A Gotime é uma agência digital focada na criação de experiências digitais. Usamos todo nosso conhecimento para ajudar nossos clientes a construírem suas marcas através da interatividade.</p>
+    </div>
+    <img class="lines" src="assets/img/lines.svg" alt="">
+  </section>
+  <section id="services">
+    <div class="bg-full clear">
+      <div class="container-text align-right">
+        <div class="section-title">
+          <h3>Sites <br><span class="font-bold">Personalizados</span></h3>
+        </div>
+        <div class="content-wrapper">
+          <h4>DESTAQUE-SE NO MERCADO</h4>
+          <p>Tudo o que criamos é único. Cada projeto é feito de acordo com as necessidades do cliente.</p> 
+        </div>              
+      </div>
+      <div class="image-container">
+        <svg class="devices laptop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 398.5"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-.25" y1="-445.95" x2=".34" y2="-445.37" gradientTransform="matrix(708 0 0 462 315.56 206088.58)"><stop offset="0" stop-color="#ededed"/><stop offset=".99" stop-color="#dedede"/></linearGradient><path d="M75.5 3H624c10 0 18.1 8 18.1 18v345.4c0 10-8.1 18-18.1 18H75.5c-9.9 0-18-8-18-18V21c0-9.9 8.1-18 18-18z" fill="url(#a)"/><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-.29" y1="-710.16" x2=".53" y2="-710.16" gradientTransform="matrix(840 0 0 5.6 249.56 4360.08)"><stop offset="0" stop-color="#b9b9b9"/><stop offset=".03" stop-color="#ebebeb"/><stop offset=".09" stop-color="#f7f7f7"/><stop offset=".2" stop-color="#f2f2f2"/><stop offset=".28" stop-color="#dbdbdb"/><stop offset=".4" stop-color="#d2d2d2"/><stop offset=".59" stop-color="#d3d2d3"/><stop offset=".67" stop-color="#d5d5d6"/><stop offset=".74" stop-color="#e5e5e6"/><stop offset=".88" stop-color="#fafafa"/><stop offset=".97" stop-color="#dfdfe0"/><stop offset="1" stop-color="#c1c1c1"/></linearGradient><path fill="url(#b)" d="M3 380.9h693.5v4.6H3z"/><path d="M288.5 380.9h123.7v1.7c0 1-.8 1.7-1.7 1.7H290.2c-1 0-1.7-.8-1.7-1.7v-1.7z" fill="#a2a2a2"/><path d="M288.5 380.9h123.7v1.7c0 1-.8 1.7-1.7 1.7H290.2c-1 0-1.7-.8-1.7-1.7v-1.7z" fill="#eeeff0"/><linearGradient id="c" gradientUnits="userSpaceOnUse" x1=".12" y1="-576.98" x2=".12" y2="-576.16" gradientTransform="matrix(840 0 0 11.2 249.56 6843.07)"><stop offset="0" stop-color="#dcdcdc"/><stop offset="1" stop-color="#b3b3b3"/></linearGradient><path d="M3 385.5l347.9-1.1v9.2H114c-94.3 0-111-8.1-111-8.1zm693.5 0s-16.6 8.1-111 8.1H350.9v-9.2l345.6 1.1z" fill="url(#c)"/></svg>
+        <img class="laptop-background" src="/assets/img/bg-laptop.png" alt="">
+      </div>
+    </div>
+    <div class="bg-full white">
+      <div class="container-text align-left">
+        <div class="section-title left">
+          <h3>Sites <br><span class="font-bold">Mobile</span></h3>
+        </div>
+        <div class="content-wrapper">
+          <h4>TENHA UM SITE RESPONSIVO</h4>
+          <p>Criamos sites responsivos com a melhor experiência de navegação, seja em desktops, smartphones ou tablets.</p>
+        </div>        
+      </div>
+      <div class="image-container mobile">
+        <svg class="devices" id="Camada_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 561 490"><style>.bxr0,.bxr1{fill:#e2e4e5;stroke:#b2b2b2;stroke-width:1.5;stroke-miterlimit:10}.bxr1{fill:#f7f7f8;stroke:#fff;stroke-width:3}</style><g id="XMLID_1_"><path id="XMLID_9_" class="bxr0" d="M30.4 4.8H318c13.9 0 25.2 11.3 25.2 25.2v432.9c0 13.9-11.3 25.2-25.2 25.2H30.4c-13.9 0-25.2-11.3-25.2-25.2V30c0-14 11.3-25.2 25.2-25.2z"/><path id="XMLID_8_" class="bxr1" d="M34.3 8.6h279.9c13.9 0 25.2 11.3 25.2 25.2V459c0 13.9-11.3 25.2-25.2 25.2H34.3c-13.9 0-25.2-11.3-25.2-25.2V33.8c0-13.9 11.3-25.2 25.2-25.2z"/><circle id="XMLID_7_" cx="170.4" cy="465.2" r="10.6" fill="#f7f7f8" stroke="#b2b2b2" stroke-width="1.5" stroke-miterlimit="10"/><path id="XMLID_6_" class="bxr0" d="M391.4 118.4h134.1c17.1 0 30.9 13.9 30.9 30.9v307.3c0 17.1-13.9 30.9-30.9 30.9H391.4c-17.1 0-30.9-13.9-30.9-30.9V149.4c0-17.1 13.8-31 30.9-31z"/><path id="XMLID_5_" class="bxr1" d="M392.8 122.2h131.3c15.9 0 28.9 12.9 28.9 28.9V455c0 15.9-12.9 28.9-28.9 28.9H392.8c-15.9 0-28.9-12.9-28.9-28.9V151.1c0-15.9 12.9-28.9 28.9-28.9z"/><path id="XMLID_4_" d="M438.5 132.5h39.9c.8 0 1.4.6 1.4 1.4 0 .8-.6 1.4-1.4 1.4h-39.9c-.8 0-1.4-.6-1.4-1.4 0-.7.6-1.4 1.4-1.4z" fill="#e2e4e5"/><circle id="XMLID_3_" cx="392.5" cy="133.9" r="2.1" fill="#0c0c0c"/><path id="XMLID_2_" d="M453.6 145.6H464a2.8 2.8 0 1 1 0 5.6h-10.3c-1.5 0-2.7-1.2-2.7-2.7-.1-1.7 1.1-2.9 2.6-2.9z" fill="#1e1e1e"/></g></svg>
+      </div>
+    </div>
+    <div class="bg-full clear">
+      <div class="container-text align-right">
+        <div class="section-title">
+          <h3>Identidade & <br><span class="font-bold">Branding</span></h3>
+        </div>
+        <div class="content-wrapper">
+          <h4>DESENVOLVA SUA MARCA</h4>
+          <p>Elaboramos sua identidade visual com estratégias focadas em ampliar o impacto da sua marca.</p>
+        </div>       
+      </div>
+      <div class="image-container">
+        <svg class="devices desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 563.8"><linearGradient id="vz" gradientUnits="userSpaceOnUse" x1="-52.5" y1="632.647" x2="645.5" y2="632.647" gradientTransform="matrix(1 0 0 -1 54.5 1080.75)"><stop offset="0" stop-color="#edeef1"/><stop offset="1" stop-color="#dadde1"/></linearGradient><path d="M2 462.2c0 10 8.1 18.1 18.1 18.1h661.8c10 0 18.1-8.1 18.1-18.1v-46.4H2v46.4z" fill="url(#vz)"/><linearGradient id="vx" gradientUnits="userSpaceOnUse" x1="-52.5" y1="870.955" x2="645.343" y2="870.955" gradientTransform="matrix(1 0 0 -1 54.5 1080.75)"><stop offset=".014" stop-color="#eeeff2"/><stop offset=".22" stop-color="#eeeff2"/><stop offset=".83" stop-color="#d4d8dc"/></linearGradient><path d="M681.9 2H20.1C10.1 2 2 10.1 2 20.1v397.5h697.8V20c.2-9.9-7.9-18-17.9-18z" fill="url(#vx)"/><linearGradient id="vf" gradientUnits="userSpaceOnUse" x1="190.147" y1="525.213" x2="296.497" y2="525.213" gradientTransform="matrix(1 0 0 -1 54.5 1080.75)"><stop offset=".014" stop-color="#e6e7eb"/><stop offset=".045" stop-color="#d7dadf"/><stop offset=".112" stop-color="#c0c5cc"/><stop offset=".173" stop-color="#b3b9c1"/><stop offset=".22" stop-color="#aeb5be"/><stop offset=".83" stop-color="#8e98a3"/></linearGradient><path d="M258.2 555.4s-13.7-.3-13.7-1.6v1.9c0 1.6 13.7 1.6 13.7 1.6H351v-1.9h-92.8z" fill="url(#vf)"/><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="1120.737" y1="525.213" x2="1227.085" y2="525.213" gradientTransform="rotate(180 789.041 540.375)"><stop offset=".014" stop-color="#e6e7eb"/><stop offset=".045" stop-color="#d7dadf"/><stop offset=".112" stop-color="#c0c5cc"/><stop offset=".173" stop-color="#b3b9c1"/><stop offset=".22" stop-color="#aeb5be"/><stop offset=".83" stop-color="#8e98a3"/></linearGradient><path d="M443.8 555.4s13.7-.3 13.7-1.6v1.9c0 1.6-13.7 1.6-13.7 1.6H351v-1.9h92.8z" fill="url(#d)"/><linearGradient id="e" gradientUnits="userSpaceOnUse" x1="243.283" y1="525.305" x2="243.283" y2="600.477" gradientTransform="matrix(1 0 0 -1 54.5 1080.75)"><stop offset=".004" stop-color="#e6e7eb"/><stop offset=".034" stop-color="#e6e7eb"/><stop offset=".214" stop-color="#e6e7eb"/><stop offset=".252" stop-color="#d5d7dd"/><stop offset=".359" stop-color="#adb3bb"/><stop offset=".443" stop-color="#969fa9"/><stop offset=".491" stop-color="#8e98a3"/><stop offset=".83" stop-color="#aeb5be"/></linearGradient><path d="M277.6 480.4s-6.2 48.8-6.5 50.7c-1 6.5-26.1 22.4-26.1 22.4s-4.1 2.1 13.2 2.1H351v-75.2h-73.4z" fill="url(#e)"/><linearGradient id="f" gradientUnits="userSpaceOnUse" x1="1174.842" y1="525.305" x2="1174.842" y2="600.477" gradientTransform="rotate(180 789.041 540.375)"><stop offset=".004" stop-color="#e6e7eb"/><stop offset=".034" stop-color="#e6e7eb"/><stop offset=".214" stop-color="#e6e7eb"/><stop offset=".252" stop-color="#d5d7dd"/><stop offset=".359" stop-color="#adb3bb"/><stop offset=".443" stop-color="#969fa9"/><stop offset=".491" stop-color="#8e98a3"/><stop offset=".83" stop-color="#aeb5be"/></linearGradient><path d="M423.4 480.4s6.2 48.8 6.5 50.7c1 6.5 26.1 22.4 26.1 22.4s4.1 2.1-13.2 2.1H350v-75.2h73.4z" fill="url(#f)"/></svg>
+        <img class="desktop-background" src="/assets/img/bg-imac.png" alt="Imagem Computador">
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container">
+      <p class="cta-font">Vamos falar do seu projeto?<br>Mande um oi!</p>
+      <a href="#" onclick="openModal()" class="btn-outline">SOLICITE UM ORÇAMENTO</a>
+    </div>    
+  </section>
+  <section id="portfolio">
+    <div class="container">
+      <img class="spinner" src="assets/img/spinner.svg" alt="">
+      <h2>Últimos Trabalhos</h2>
+      <div class="projetos">
+        <img class="portfolio-img" src="assets/img/portfolio1.jpg" alt="Imagem de um website">
+        <img class="portfolio-img" src="assets/img/portfolio2.jpg" alt="Imagem de um website">
+        <img class="portfolio-img" src="assets/img/portfolio3.jpg" alt="Imagem de um website">
+        <img class="portfolio-img" src="assets/img/portfolio4.jpg" alt="Imagem de um website">
+      </div>
+    </div>    
+  </section>
+  <div class="contact-space"></div>
+  <section id="contact">
+    <div class="container">
+      <h2>Fale com a gente,</h2>
+      <p class="contact-font">+55 62 99310.6426 <br>contato@gotime.com.br</p>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="social">
+          <a class="facebook" href="https://www.facebook.com/agenciagotime" target="_blank" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon" viewBox="0 0 24 23">
+              <path fill="inherit" d="M16.5,0 L7.4,0 C3.8,0 0.9,2.9 0.9,6.5 L0.9,15.6 C0.9,19.2 3.8,22.1 7.4,22.1 L16.5,22.1 C20.1,22.1 23,19.2 23,15.6 L23,6.5 C23,2.9 20.1,0 16.5,0 Z M21,15.5 C21,18 19,20 16.5,20 L14,20 L14,12 L17,12 L17,10 L14,10 L14,9 C14,7.9 14.9,7 16,7 L18,7 L18,5 L16,5 C13.8,5.1 12,6.8 12,9 L12,10 L10,10 L10,12 L12,12 L12,20 L7.5,20 C5,20 3,18 3,15.5 L3,6.4 C3,3.9 5,1.9 7.5,1.9 L16.6,1.9 C19.1,1.9 21.1,3.9 21.1,6.4 L21.1,15.5 L21,15.5 Z"></path>
+            </svg>
+          </a>
+          <a class="instagram" href="https://www.instagram.com/agenciagotime/" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon" viewBox="0 0 22 22">
+              <path fill="inherit" d="M2,6.45187444 C2,3.98999605 3.98785555,2 6.45187444,2 L15.5481256,2 C18.010004,2 20,3.98785555 20,6.45187444 L20,15.5481256 C20,18.010004 18.0121444,20 15.5481256,20 L6.45187444,20 C3.98999605,20 2,18.0121444 2,15.5481256 L2,6.45187444 Z M0,6.45187444 L0,15.5481256 C0,19.1171961 2.8859081,22 6.45187444,22 L15.5481256,22 C19.1171961,22 22,19.1140919 22,15.5481256 L22,6.45187444 C22,2.88280393 19.1140919,0 15.5481256,0 L6.45187444,0 C2.88280393,0 0,2.8859081 0,6.45187444 Z"
+                fill-rule="evenodd"></path>
+              <path fill="inherit" d="M11,6.7 C13.3748244,6.7 15.3,8.62517558 15.3,11 C15.3,13.3748244 13.3748244,15.3 11,15.3 C8.62517558,15.3 6.7,13.3748244 6.7,11 C6.7,8.62517558 8.62517558,6.7 11,6.7 L11,6.7 Z M11,5 C7.6862915,5 5,7.6862915 5,11 C5,14.3137085 7.6862915,17 11,17 C14.3137085,17 17,14.3137085 17,11 C17,7.6862915 14.3137085,5 11,5 Z"
+                fill-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a class="github" href="https://github.com/agenciagotime" target="_blank" aria-label="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon" viewBox="0 0 22 23">
+              <path fill="#inherit" d="M3.7,3.13 L5.31,4.13 L6,4.62 L6.77,4.37 C9.52406037,3.48550991 12.4859396,3.48550991 15.24,4.37 L16.01,4.62 L16.69,4.18 L18.3,3.18 L18.3,5.92 L18.82,6.42 C19.7062938,7.2067388 20.2395262,8.31643859 20.3,9.5 C20.3,11.59 18.3,13.6 15.3,14.61 C14.5498118,14.8610534 13.9610534,15.4498118 13.71,16.2 C13.4605039,16.918827 13.5681931,17.7134992 14,18.34 C14.1758517,18.5885364 14.270195,18.8855429 14.27,19.19 L14.27,20.26 L7.7,20.26 L7.7,19.19 C7.70852076,18.8822417 7.81345557,18.5849264 8,18.34 C8.43856756,17.7168713 8.55371762,16.9219644 8.31,16.2 C8.06101579,15.4520453 7.476369,14.8636982 6.73,14.61 C3.73,13.61 1.73,11.61 1.73,9.5 C1.78272511,8.32091623 2.30482985,7.21189374 3.18,6.42 L3.7,5.92 L3.7,3.13 L3.7,3.13 Z M19.41,0.5 C19.295815,0.501105776 19.184497,0.535892672 19.09,0.6 L15.77,2.75 C12.6685484,1.75043243 9.33145162,1.75043243 6.23,2.75 L2.91,0.59 C2.81439909,0.529420923 2.70316309,0.498135799 2.59,0.5 C2.264152,0.5 2,0.764151998 2,1.09 L2,5.2 C0.771136618,6.29787584 0.0478983557,7.8528381 0,9.5 C0,12.5 2.51,15 6.15,16.22 C6.37618683,16.2921516 6.55644235,16.4646104 6.63851832,16.687388 C6.72059429,16.9101656 6.69531211,17.1583488 6.57,17.36 C6.19512112,17.8962763 5.99595672,18.5356988 6,19.19 L6,22 L16,22 L16,19.19 C16.0019759,18.5391076 15.802907,17.9034841 15.43,17.37 C15.3046879,17.1683488 15.2794057,16.9201656 15.3614817,16.697388 C15.4435576,16.4746104 15.6238132,16.3021516 15.85,16.23 C19.49,15 22,12.45 22,9.5 C21.9521016,7.8528381 21.2288634,6.29787584 20,5.2 L20,1.09 C20,0.933522271 19.9378395,0.783453462 19.827193,0.672806999 C19.7165465,0.562160536 19.5664777,0.5 19.41,0.5 L19.41,0.5 Z"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="footer-text">2018 © GOTIME • AGÊNCIA DIGITAL</p>
+      </div>      
+    </div>
+  </footer>
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    window.sr = ScrollReveal({ duration: 900 });
+    sr.reveal('.w660');
+    sr.reveal('.cta-font');
+    sr.reveal('.portfolio-img', { duration: 1000 }, 250);
+  </script>
+</body>
+</html>
