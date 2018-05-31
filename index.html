@@ -93,7 +93,7 @@
       <span id="btn-close" class="close-modal">&times;</span>
     </div>
     <div class="modal-box">
-      <form action="https://formspree.io/rclfisica@gmail.com" method="POST">
+      <form name="form-request-propose" action="https://formspree.io/rclfisica@gmail.com" method="POST">
         <div class="input-container">
           <select name="Tipo" id="dropdown-select">
             <option disabled selected>Tipo de projeto...</option>
@@ -108,18 +108,19 @@
         <input type="text" name="_gotcha" style="display:none" />
         <div class="input-container">
           <input type="text" id="name" name="Nome" pattern=".*\S.*" required>
-          <label for="name" class="floating-label">Nome</label>
+          <label for="name" class="floating-label">Nome*</label>
         </div>
         <div class="input-container">
           <input type="email" id="email" name="Email" onblur="checkMail(this)" required>
-          <label for="email" class="floating-label">Email</label>
-          <span class="form-error" id="error">informe um email válido</span>
+          <label for="email" class="floating-label">Email*</label>
+          <span class="form-error" id="error">Informe um email válido</span>
         </div>
         <div class="input-container">
           <textarea name="Mensagem" id="message" placeholder="Fale sobre seu projeto (opcional)"></textarea>
         </div>
         <div class="input-container">
-          <input class="btn-outline" type="submit" value="SOLICITAR ORÇAMENTO">
+          <input id="submit-hidden" type="submit" style="display: none" />
+          <input class="btn-outline" type="button" onclick="submitForm()" value="SOLICITAR ORÇAMENTO">
         </div>        
       </form>
     </div>
@@ -129,7 +130,7 @@
       <div class="header-content">
         <h1>Somos a <span>Gotime,</span><br>a agência digital</h1>
         <p>Nunca foi tão fácil ter o seu site profissional</p>
-        <a href="#" onclick="openModal()" class="btn-outline">SOLICITE UM ORÇAMENTO</a>
+        <a onclick="openModal()" class="btn-outline">SOLICITE UM ORÇAMENTO</a>
       </div>      
     </div>
   </header>
