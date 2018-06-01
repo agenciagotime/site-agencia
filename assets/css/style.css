@@ -337,6 +337,20 @@ h1 > span {
   width: 82%;
 }
 
+.tablet-background {
+  position: absolute;
+  top: 12%;
+  left: 3%;
+  width: 60%;
+}
+
+.phone-background {
+  position: absolute;
+  top: 35%;
+  left: 58%;
+  width: 40%;
+}
+
 .devices {
   height: 100%;
   width: 100%;
@@ -366,8 +380,25 @@ h1 > span {
   margin-top: 1.4em;
 }
 
+.portfolio-wrapper {
+  position: relative;
+}
+
 .portfolio-img {
   margin: 4px 0;
+}
+
+.inner-background {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.portfolio-wrapper:hover > .inner-background {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /**************************************
@@ -535,6 +566,9 @@ textarea::-webkit-input-placeholder {
     left: 8%;
     width: 84%;
   }
+  .phone-background {
+    left: 59%;
+  }
 }
 
 /* Viewport Tablet */
@@ -553,6 +587,10 @@ textarea::-webkit-input-placeholder {
   }
   .laptop-background {
     top: 12%;
+  }
+  .tablet-background {
+    left: 2%;
+    width: 61%;
   }
   .desktop-background {
     top: 9%;
@@ -602,6 +640,13 @@ textarea::-webkit-input-placeholder {
   .laptop-background {
     top: 23%;
   }
+  .tablet-background {
+    top: 11%;
+  }
+  .phone-background {
+    left: 58%;
+    width: 41%;
+  }
   .desktop-background {
     top: 10%;
   }
@@ -620,6 +665,9 @@ textarea::-webkit-input-placeholder {
   .section-title {
     position: relative;
   }
+  .left > h3 {
+    color: #149DBF;
+  }
   .section-title::after {
     content: "";
     background: var(--azul-escuro);
@@ -629,6 +677,9 @@ textarea::-webkit-input-placeholder {
     width: 40px;
     height: 6px;
     border-radius: 5px;
+  }
+  .left.section-title::after {
+    background: #149DBF;
   }
   .left::after {
     left: 0;
@@ -691,6 +742,15 @@ textarea::-webkit-input-placeholder {
   }
   .laptop-background {
     top: 16%;
+  }
+  .tablet-background {
+    top: 10%;
+    left: 12%;
+    width: 49%;
+  }
+  .phone-background {
+    left: 56.5%;
+    width: 32%;
   }
   .desktop-background {
     top: 9%;
