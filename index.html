@@ -24,7 +24,7 @@
 <body id="page-top">
   <div class="loader" id="loader"></div>
   <img class="shape" src="assets/img/shape-bg.svg" alt="">
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="nav-wrapper">
       <a class="logotipo" href="#page-top">
         <svg xmlns="http://www.w3.org/2000/svg" id="Camada_1" viewBox="0 0 273 301.6"><style>.st0{fill:#599def}.st1{fill:#377de1}.st2{fill:#355293}</style><g id="XMLID_1_"><path id="XMLID_11_" class="st0" d="M136.5.7L0 79.5 37.2 101l99.3-57.3 37.2 21.5 37.2-21.5-74.4-43z"/><path id="XMLID_10_" class="st1" d="M0 222.8V79.5L37.2 101v100.3l99.3 57.3v43L0 222.8z"/><path id="XMLID_9_" class="st0" d="M235.8 58L99.3 136.8l37.2 21.5L273 79.5 235.8 58z"/><path id="XMLID_8_" class="st1" d="M99.3 179.8v-43l37.2 21.5v43l-37.2-21.5z"/><path id="XMLID_7_" class="st2" d="M136.5 301.6L273 222.8V79.5l-136.5 78.8v43l99.3-57.3v57.3l-99.3 57.3v43z"/><path id="XMLID_6_" class="st2" d="M136.5 43.7v43l-62.1 35.8v57.3l-37.2 21.5V101l99.3-57.3z"/><path id="XMLID_5_" class="st2" d="M210.9 43.7v28.7l-37.2 21.5V65.2l37.2-21.5z"/><path id="XMLID_4_" class="st1" d="M136.5 43.7v43l24.8 14.3 12.4-7.2V65.2l-37.2-21.5z"/><path id="XMLID_3_" class="st1" d="M198.6 165.5v14.3l37.2 21.5V144l-37.2 21.5z"/><path id="XMLID_2_" class="st0" d="M136.5 215.6l-62.1-35.8-37.2 21.5 99.3 57.3 99.3-57.3-37.2-21.5-62.1 35.8z"/></g></svg>
@@ -93,7 +93,7 @@
       <span id="btn-close" class="close-modal">&times;</span>
     </div>
     <div class="modal-box">
-      <form action="https://formspree.io/rclfisica@gmail.com" method="POST">
+      <form name="form-request-propose" action="https://formspree.io/rclfisica@gmail.com" method="POST">
         <div class="input-container">
           <select name="Tipo" id="dropdown-select">
             <option disabled selected>Tipo de projeto...</option>
@@ -108,28 +108,29 @@
         <input type="text" name="_gotcha" style="display:none" />
         <div class="input-container">
           <input type="text" id="name" name="Nome" pattern=".*\S.*" required>
-          <label for="name" class="floating-label">Nome</label>
+          <label for="name" class="floating-label">Nome*</label>
         </div>
         <div class="input-container">
           <input type="email" id="email" name="Email" onblur="checkMail(this)" required>
-          <label for="email" class="floating-label">Email</label>
-          <span class="form-error" id="error">informe um email válido</span>
+          <label for="email" class="floating-label">Email*</label>
+          <span class="form-error" id="error">Informe um email válido</span>
         </div>
         <div class="input-container">
           <textarea name="Mensagem" id="message" placeholder="Fale sobre seu projeto (opcional)"></textarea>
         </div>
         <div class="input-container">
-          <input class="btn-outline" type="submit" value="SOLICITAR ORÇAMENTO">
+          <input id="submit-hidden" type="submit" style="display: none" />
+          <input class="btn-outline" type="button" onclick="submitForm()" value="SOLICITAR ORÇAMENTO">
         </div>        
       </form>
     </div>
   </div>
-  <header>
+  <header id="header">
     <div class="container">
       <div class="header-content">
         <h1>Somos a <span>Gotime,</span><br>a agência digital</h1>
         <p>Nunca foi tão fácil ter o seu site profissional</p>
-        <a href="#" onclick="openModal()" class="btn-outline">SOLICITE UM ORÇAMENTO</a>
+        <a onclick="openModal()" class="btn-outline">SOLICITE UM ORÇAMENTO</a>
       </div>      
     </div>
   </header>
@@ -261,6 +262,9 @@
       </div>      
     </div>
   </footer>
+
+  <a id="btnScrollToTop" class="go-to-top" href="#navbar" title="Ir para o topo">Go to top</a>
+
   <script src="assets/js/scrollreveal.min.js"></script>
   <script src="assets/js/script.js"></script>
   <script>

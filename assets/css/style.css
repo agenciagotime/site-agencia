@@ -159,11 +159,26 @@ section {
 .logotipo {
   width: 40px;
   height: 100%;
+
+  /* Effect zoom */
+  /*transition: all 0.5s ease;*/
+
+  /* Effect rotate */
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
 }
 
 .logotipo:hover {
-  transform: scale(1.1);
+  /* Effect zoom */
+/*  transform: scale(1.1);
   transition: all .2s ease-in-out;
+  transition: all 0.5s ease-in-out;*/
+
+  /* Effect rotate */
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
 }
 
 /**************************************
@@ -901,4 +916,29 @@ textarea::-webkit-input-placeholder {
   transition: opacity .8s, visibility 1s;
   opacity: 0;
   visibility: hidden;
+}
+
+/**************************************
+ *          GO TO TOP
+ **************************************/
+.go-to-top {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--azul) url(../img/top-arrow.svg) no-repeat center 50%;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
+  text-indent: -9999px;
+}
+
+.go-to-top:hover {
+  background-color: var(--cinza);
 }
