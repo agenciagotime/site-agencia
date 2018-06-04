@@ -1,21 +1,6 @@
 /**************************************
  *              LOADER
  **************************************/
- .loader {
-  position: absolute;
-  content: '';
-  opacity: 1;
-  visibility: visible;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: url(/assets/img/loader.svg) center no-repeat #FFF;
-  background-size: 50px;
-  transition: opacity .8s, visibility 1s;
-  z-index: 50;
-}
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
