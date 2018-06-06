@@ -72,23 +72,30 @@ p {
 }
 
 .btn-outline {
-  display: block;
+  display: inline-block;
+  position: relative;
   width: 13em;
   margin: .4em auto;
   padding: 12px 20px;
   font-weight: var(--semibold);
   font-size: 16px;
-  color: var(--azul);
-  border: 1px solid var(--azul);
+  color: var(--azul-escuro);
+  border: 1px solid var(--azul-escuro);
   border-radius: 24px;
   cursor: pointer;
-  transition: all .4s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
 }
 
-.btn-outline:hover {
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
   color: var(--branco);
+  border: 1px solid var(--azul);
   background-color: var(--azul);
-  transform: translateY(-2px);
+  -webkit-box-shadow: 0px 10px 30px -10px rgba(161,161,161,1);
+  -moz-box-shadow: 0px 10px 30px -10px rgba(161,161,161,1);
+  box-shadow: 0px 10px 30px -10px rgba(161,161,161,1);
 }
 
 .contain-all {
